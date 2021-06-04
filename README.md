@@ -107,7 +107,7 @@ https://user-images.githubusercontent.com/55008881/120818246-632ebc80-c58d-11eb-
    pip install pykinect2
    ```
 
-### 5.4 NumPy package Installation (1,2번중 선택) [🔝](#members)
+### 5.4 NumPy package Installation (1,2번중 선택) 
    1. Anaconda 32-bit 버전에 NumPy가 포함되어 있기 때문에 [Anaconda](https://www.anaconda.com/products/individual)다운 받으면 됩니다. 
    2. 터미널 또는 CMD창에서 아래의 명령어를 통해 패키지를 설치합니다.
    
