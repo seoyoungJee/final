@@ -1,9 +1,16 @@
 # Manners Maketh Man
 ### Members    
 강하영, 강진, 김해린, 지서영, 유수정
-    
 
-## 1. Introduction 
+## Contents
+1. [Introduction](#1.-Introduction)
+2. [Background & Objective](#2.-Background-&-Objective)
+3. Main Function
+4. Demonstration Video
+5. Step by Step Instruction
+6. Code
+
+## 1. Introduction
 해당 프로젝트는 **모션인식을 이용한 어린이 언어습관 교정 게임**이다. 어린이가 존댓말, 감사표현 등 상황에 맞는 언어 습관을 구사할 수 있도록 모션 인식 기술을 이용해 게임으로 재미있게 공부할 수 있도록 돕는다. 빙고게임이라는 게임 포맷을 사용함으로써 어린이가 빙고판을 채워나가는 성취감을 주어 학습효과를 더욱 향상시키고자 한다.   
 
 
@@ -126,51 +133,36 @@ C:\Users\name\Downloads> pip install pygame-2.0.0-cp35-cp35m-win_amd64.whl
 
 ## 6. Code
 ### 6.1 Main code
+
+게임 인식 화면 및 필수 설정
 ```Python
-#언어는 파이썬
-import pygame
-from pykinect2 import PyKinectV2
-from pykinect2.PyKinectV2 import *
-from pykinect2 import PyKinectRuntime
-import time
-
-import ctypes
-import _ctypes
-import pygame
-import sys
-
-import random
-import math
-import datetime
-
-#이 게임에서 없어서는 안 될 클래스
  class PyKinectCollect(object):
      def __init__(self, title, width = 1400, height=800, fill=YELLOW):
          self._clock = pygame.time.Clock()
 
          #스크린의 사이즈 설정; 가로, 세로
          self._infoObject = pygame.display.Info()
-         self._screen = pygame.display.set_mode((self._infoObject.current_w >> 1, self._infoObject.current_h >> 1), 
-                                               pygame.HWSURFACE|pygame.DOUBLEBUF|pygame.RESIZABLE)                                          
+         self._screen = pygame.display.set_mode((self._infoObject.current_w >> 1, self._infoObject.current_h >> 1),pygame.HWSURFACE|pygame.DOUBLEBUF|pygame.RESIZABLE)                  
          #사용자가 close 버튼을 누르지 않는다면
          self._done = False
-
+         
          #Kinect runtime object 
          self._kinect = PyKinectRuntime.PyKinectRuntime(PyKinectV2.FrameSourceTypes_Color | PyKinectV2.FrameSourceTypes_Body)
-
+         
          #Kinect color frames, 32비트 색깔, 가로, 그리고 세로를 담을 공간(surface)
          self._frame_surface = pygame.Surface((self._kinect.color_frame_desc.Width, self._kinect.color_frame_desc.Height), 0, 32)
 
          #골격 정보를 담는 공간 
          self._bodies = None
-
          self.current = False
          self.title = title
          self.width = width
          self.height = height
          self.fill = fill        
+```
 
-#사용자의 몸이 화면에 보이도록 하고, 게임 작동 원리를 담고 있는 매서드  
+사용자의 몸이 화면에 보이도록 하고, 사용자 관 인식 작동 원리  
+```Python
      def draw_body_bone(self, joints, jointPoints, color, joint0, joint1, boardN):
          joint0State = joints[joint0].TrackingState;
          joint1State = joints[joint1].TrackingState;
@@ -182,7 +174,6 @@ import datetime
          #사용자의 관절이 전혀 인식되지 않을 때 
          if (joint0State == PyKinectV2.TrackingState_Inferred) and (joint1State == PyKinectV2.TrackingState_Inferred):
              return
-
          start = (0, 0)
          end = (0, 0)
          global starttime
@@ -213,18 +204,31 @@ import datetime
                     if (starttime+2 < fts2):
                         print('touch1')
                         flag = 0
+```
 
-#이 게임이 작동되도록 하는 함수 
+메인 빙고 화면 설정 및 화면 변환
+```Python
 def w_game():
     pygame.font.init()
-
     game = PyKinectCollect("Bingo Game for Etiquette")
     b_screen = Screen("Bingo_Screen")
     win = b_screen.makeCurrent()
     done = False
-    
+    returnButton = Button(1000, 650, 300, 100,3, colours["Black"], colours["Cyan"], "arial", 20, colours["Black"], "RETURN")
+    bingo_1 = Button(800,200,150,150,3, colours["White"], colours["Cyan"],"arial", 20, colours["Black"], "1")
+    toggle = False
+    while not done:
+        b_screen.screenUpdate()
+        b_screen.show_middle_img()
+        b_screen.show_left_img()
+        game.screenUpdate()
+        mouse_pos = pygame.mouse.get_pos()
+        mouse_click = pygame.mouse.get_pressed()
+        keys = pygame.key.get_pressed()
+         
     #3x3 빙고 표에서의 좌표(행과 열)에 따라 page에 숫자를 부여했다 
     #b_1(행: 1, 열: 1)
+        #메인 빙고 화면에서 게임 화면으로 변환
         if b_screen.checkUpdate():
             screen2button = bingo_1.focusCheck(mouse_pos, mouse_click)
             bingo_1.showButton(b_screen.returnTitle(),buttonlist[0])
@@ -232,15 +236,14 @@ def w_game():
                 win = game.makeCurrent()
                 g_screen=game.playGame(1)
                 b_screen.endCurrent()
-                
-    #b_2(행: 1, 열: 2)  
-        if b_screen.checkUpdate():
-            screen2button = bingo_2.focusCheck(mouse_pos, mouse_click)
-            bingo_2.showButton(b_screen.returnTitle(),buttonlist[1])
-            if screen2button:
-                win = game.makeCurrent()
-                g_screen=game.playGame(2)
-                b_screen.endCurrent()
+        #게임 화면에서 메인 빙고 화면으로 변환
+        elif game.checkUpdate():
+            b_screen.show_return_img()
+            returnm = returnButton.focusCheck(mouse_pos, mouse_click)
+            returnButton.showButton(game.returnTitle(),0)
+            if returnm:
+                win = b_screen.makeCurrent()
+                game.endCurrent()      
 ```
 
 ### 6.2 Detailed code
