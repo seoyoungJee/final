@@ -77,6 +77,24 @@ https://user-images.githubusercontent.com/55008881/120818246-632ebc80-c58d-11eb-
   6. 실행된 Kinect for Window에 위와 같이 체크가 되어 있어야 합니다. (USB Controller의 느낌표가 표시되어 있지만 사용하는데 문제는 없습니다.)
   7. 설치가 완료되었습니다.
 
+### 5.2 Python Installation
+
+   1. 사이트에서 파이썬 설치 파일을 다운 받습니다. (https://www.python.org/downloads/)
+   2. 다운받은 python-3-X.pkg 파일을 실행하여 파이썬 설치를 완료합니다.
+   3. 터미널에서 아래의 명령어를 입력하면, 설치한 파이썬 버전을 확인할 수 있습니다.
+   ```
+   python3 -V 
+   ```
+
+### 5.3 Pykinect2 package Installation    
+
+   - 터미널 또는 CMD창에서 아래의 명령어를 통해 패키지를 설치합니다.
+   ```
+   pip install pykinect2
+   ```
+
+
+
 ## 6. Code
 ### 6.1 Main code
 ```Python
