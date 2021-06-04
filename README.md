@@ -1,4 +1,4 @@
-# Bingo Game for Etiquette (Kinect&Python)
+# Bingo Game for Etiquette
 ### Manners Maketh Man members    
 강하영, 강진, 김해린, 지서영, 유수정
 
@@ -133,8 +133,9 @@ C:\Users\name\Downloads> pip install pygame-2.0.0-cp35-cp35m-win_amd64.whl
 ## 6.Code [🔝](#bingo-game-for-etiquette)
 ### 6.1 Main code
 
-게임 화면 및 필수 요소 설정
+게임 화면과 필수 요소 설정
 ```Python
+#이 게임에서 없어서는 안 될 클래스
  class PyKinectCollect(object):
      def __init__(self, title, width = 1400, height=800, fill=YELLOW):
          self._clock = pygame.time.Clock()
@@ -160,8 +161,9 @@ C:\Users\name\Downloads> pip install pygame-2.0.0-cp35-cp35m-win_amd64.whl
          self.fill = fill        
 ```
 
-사용자의 몸이 화면에 보이도록 하고, 사용자 관절 인식 작동 원리 [🔝](#bingo-game-for-etiquette)
+화면에 사용자의 몸이 보이도록 하고, 사용자의 관절을 인식하는 원리 [🔝](#bingo-game-for-etiquette)
 ```Python
+     #사용자의 몸이 화면에 보이도록 하고, 게임 작동 원리를 담고 있는 매서드
      def draw_body_bone(self, joints, jointPoints, color, joint0, joint1, boardN):
          joint0State = joints[joint0].TrackingState;
          joint1State = joints[joint1].TrackingState;
