@@ -84,7 +84,7 @@ https://user-images.githubusercontent.com/55008881/120818246-632ebc80-c58d-11eb-
   7. 설치가 완료되었습니다.
 
 
-### 5.2 Python Installation [🔝](#members)
+### 5.2 Python Installation 
 
    1. 사이트에서 [Python](https://www.python.org/downloads/) 설치 파일을 다운 받습니다. 
 
@@ -247,4 +247,5 @@ def w_game():
 
 ### 6.2 Detailed code
 [Detailed](https://github.com/Jedidiah97/123/blob/main/README.md) 
+
 [🔝](#members)
