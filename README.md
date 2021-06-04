@@ -190,6 +190,7 @@ def w_game():
                 win = game.makeCurrent()
                 g_screen=game.playGame(2)
                 b_screen.endCurrent()
-                
+'''
+
 ### 6.2 Detailed code
 [Detailed](https://github.com/Jedidiah97/123/blob/main/README.md) 
