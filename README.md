@@ -2,18 +2,18 @@
 ### Members    
 강하영, 강진, 김해린, 지서영, 유수정
 
-1. [Introduction](#1introduction)
-2. [Background & Objective](#2background--objective)
+1. [Introduction](#1introduction-----top)
+2. [Background & Objective](#2background--objective-----top)
 3. [Main Function](#3main-function-----top)
 4. [Demonstration Video](#4demonstration-video-----top)
-5. [Step by Step Instruction](#5step-by-step-instruction-----top)
+5. [Step by Step Instruction](#5step-by-step-instruction-top)https://github.com/seoyoungJee/final/blob/main/README.md#5step-by-step-instruction-top
 6. [Code](#6code-----top)
 
-## 1.Introduction
+## 1.Introduction     [top](#members)
 해당 프로젝트는 **모션인식을 이용한 어린이 언어습관 교정 게임**이다. 어린이가 존댓말, 감사표현 등 상황에 맞는 언어 습관을 구사할 수 있도록 모션 인식 기술을 이용해 게임으로 재미있게 공부할 수 있도록 돕는다. 빙고게임이라는 게임 포맷을 사용함으로써 어린이가 빙고판을 채워나가는 성취감을 주어 학습효과를 더욱 향상시키고자 한다.   
 
 
-## 2.Background & Objective
+## 2.Background & Objective     [top](#members)
 
 ### 2.1 Target User
 > 6-7세의 어린이를 대상으로 함. 초등학교 입학 전 필요한 올바른 언어에 대한 학습을 할 수 있는 프로그램이므로 미취학 아동 중 글을 읽을 수 있는 나이인 6-7세의 어린이로 설정했다. 
