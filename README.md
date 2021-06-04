@@ -24,7 +24,7 @@
 >Kinect V2와 pygame을 이용한 모션인식 게임을 통해 어린이가 직접 몸을 움직이면서 다양한 상황에 해당하는 올바른 언어예절을 학습을 할 수 있는 빙고게임을 개발한다.
 
 
-## 3.Main Function
+## 3.Main Function     [top](#members)
 ### 3.1 Bingo Game
 1. 3x3 빙고판을 채우는 것이 과제다. 각각의 빙고 칸마다 각기 다른 스토리로 언어예절 게임이 존재한다.
 2. User가 선택한 칸에 해당하는 게임의 문제를 읽고 지시사항대로 모션을 취한다.  
@@ -44,13 +44,13 @@ Ex) 손, 팔꿈치, 무릎, 머리 등
 
 <img src="/image/손.PNG" width="50%" height="50%"><img src="/image/무릎.PNG" width="50%" height="50%">
 
-## 4.Demonstration Video
+## 4.Demonstration Video     [top](#members)
 
 https://user-images.githubusercontent.com/55008881/120818246-632ebc80-c58d-11eb-95ae-9e0707814542.mp4
 
 
 
-## 5.Step by Step Instruction
+## 5.Step by Step Instruction [top](#members)
 ### 5.1 Kinect for Windows SDK v2 Installation
 
 [Microsoft Download Center](https://www.microsoft.com/ko-kr/download/)에서 설치 파일 [Kinect for Windows SDK v2](https://developer.microsoft.com/ko-kr/windows/kinect/)을 다운 받는다. 
@@ -130,7 +130,7 @@ C:\Users\name\> cd Downloads
 C:\Users\name\Downloads> pip install pygame-2.0.0-cp35-cp35m-win_amd64.whl
 ```
 
-## 6.Code
+## 6.Code     [top](#members)
 ### 6.1 Main code
 
 게임 인식 화면 및 필수 설정
