@@ -39,7 +39,7 @@ Ex) 손, 팔꿈치, 무릎, 머리 등
 
 ## 4. Demonstration Video
 
-## 5.Step by Step Instruction
+## 5. Step by Step Instruction
 ### 5.1 Kinect for Windows SDK v2 Installation
 
 설치 과정 
