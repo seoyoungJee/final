@@ -28,7 +28,7 @@
 3. 정답맞추기에 성공하면 정답화면으로 넘어간다.
 4. 빙고판에 동그라미가 표시되고 같은 방식으로 다른 게임들을 진행해 빙고판을 완성한다.  
 
-<img src="/image/정답.PNG" width="50%" height="50%"><img src="/image/빙고판2.PNG" width="50%" height="50%">
+<img src="/image/정답.PNG" width="50%" height="50%"><img src="/image/빙고판3.png" width="50%" height="50%">
 ### 3.2 Motion in Game
 1. Kinect V2 카메라를 통해 사람 몸의 Joint를 인식한다.  
 2. 게임별로 사용되는 Joint가 각각 다른데 미리 설정한 Joint가 정해진 위치에 닿으면 정답 유무를 인식하는 알고리즘을 적용한다.
