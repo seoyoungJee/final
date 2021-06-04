@@ -207,7 +207,7 @@ C:\Users\name\Downloads> pip install pygame-2.0.0-cp35-cp35m-win_amd64.whl
                         flag = 0
 ```
 
-메인 빙고 화면 설정 및 화면 전환 [🔝](#bingo-game-for-etiquette)
+빙고 판이 있는 메인 화면 설정 및 화면 전환 [🔝](#bingo-game-for-etiquette)
 ```Python
 #이 게임이 작동되도록 하는 함수 
 def w_game():
