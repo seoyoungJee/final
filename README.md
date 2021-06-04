@@ -39,8 +39,8 @@ Ex) 손, 팔꿈치, 무릎, 머리 등
 
 ## 4. Demonstration Video
 
-## 5.설치 단계
-### 5.1 Kinect for Windows SDK v2 설치
+## 5.Step by Step Instruction
+### 5.1 Kinect for Windows SDK v2 Installation
 
 설치 과정 
 [Microsoft Download Center](https://www.microsoft.com/ko-kr/download/)에서 설치 파일 [Kinect for Windows SDK v2](https://developer.microsoft.com/ko-kr/windows/kinect/)을 다운 받는다. 
