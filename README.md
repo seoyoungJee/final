@@ -160,7 +160,7 @@ C:\Users\name\Downloads> pip install pygame-2.0.0-cp35-cp35m-win_amd64.whl
          self.fill = fill        
 ```
 
-사용자의 몸이 화면에 보이도록 하고, 사용자 관 인식 작동 원리 [🔝](#bingo-game-for-etiquette)
+사용자의 몸이 화면에 보이도록 하고, 사용자 관절 인식 작동 원리 [🔝](#bingo-game-for-etiquette)
 ```Python
      def draw_body_bone(self, joints, jointPoints, color, joint0, joint1, boardN):
          joint0State = joints[joint0].TrackingState;
