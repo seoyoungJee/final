@@ -1,5 +1,5 @@
-# Bingo Game for Etiquette
-### Manners Maketh Man Members    
+# Manners Maketh Man
+### Members    
 강하영, 강진, 김해린, 지서영, 유수정
 
 1. [Introduction](#1introduction-----) 
@@ -227,6 +227,7 @@ def w_game():
          
     #3x3 빙고 표에서의 좌표(행과 열)에 따라 page에 숫자를 부여했다 
     #b_1(행: 1, 열: 1)
+    
         #메인 빙고 화면에서 게임 화면으로 변환
         if b_screen.checkUpdate():
             screen2button = bingo_1.focusCheck(mouse_pos, mouse_click)
@@ -235,6 +236,7 @@ def w_game():
                 win = game.makeCurrent()
                 g_screen=game.playGame(1)
                 b_screen.endCurrent()
+                
         #게임 화면에서 메인 빙고 화면으로 변환
         elif game.checkUpdate():
             b_screen.show_return_img()
@@ -246,6 +248,6 @@ def w_game():
 ```
 
 ### 6.2 Detailed code
-[Detailed](https://github.com/seoyoungJee/final/blob/main/download/source%20code.md) 
+[Detailed](https://github.com/Jedidiah97/123) 
 
 [🔝](#members)
