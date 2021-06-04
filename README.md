@@ -4,7 +4,7 @@
 
 1. [Introduction](#-1.Introduction)
 2. [Background & Objective](#-2.Background-&-Objective)
-3. [Main Function](#-3.Main-Function)
+3. [Main Function](#3main-function)
 4. [Demonstration Video](#-4.Demonstration-Video)
 5. [Step by Step Instruction](#-5.Step-by-Step-Instruction)
 6. [Code](#-6.Code)
