@@ -2,12 +2,12 @@
 ### Members    
 강하영, 강진, 김해린, 지서영, 유수정
 
-1. [Introduction](#1introduction-----🔝)
-2. [Background & Objective](#2background--objective-----🔝)
-3. [Main Function](#3main-function-----🔝)
-4. [Demonstration Video](#4demonstration-video-----🔝)
-5. [Step by Step Instruction](#5step-by-step-instruction-🔝)
-6. [Code](#6code-----🔝)
+1. [Introduction](#1introduction-----) https://github.com/seoyoungJee/final/blob/main/README.md#1introduction-----
+2. [Background & Objective](#2background--objective-----)
+3. [Main Function](#3main-function-----)
+4. [Demonstration Video](#4demonstration-video-----)
+5. [Step by Step Instruction](#5step-by-step-instruction-)
+6. [Code](#6code-----)
 
 ## 1.Introduction     [🔝](#members)
 해당 프로젝트는 **모션인식을 이용한 어린이 언어습관 교정 게임**이다. 어린이가 존댓말, 감사표현 등 상황에 맞는 언어 습관을 구사할 수 있도록 모션 인식 기술을 이용해 게임으로 재미있게 공부할 수 있도록 돕는다. 빙고게임이라는 게임 포맷을 사용함으로써 어린이가 빙고판을 채워나가는 성취감을 주어 학습효과를 더욱 향상시키고자 한다.   
