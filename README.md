@@ -1,4 +1,4 @@
-# Bingo Game for Etiquette
+# Bingo Game for Etiquette (Kinect&Python)
 ### Manners Maketh Man members    
 강하영, 강진, 김해린, 지서영, 유수정
 
@@ -142,8 +142,7 @@ C:\Users\name\Downloads> pip install pygame-2.0.0-cp35-cp35m-win_amd64.whl
 
          #스크린의 사이즈 설정; 가로, 세로
          self._infoObject = pygame.display.Info()
-         self._screen = pygame.display.set_mode((self._infoObject.current_w >> 1, self._infoObject.current_h >> 1),pygame.HWSURFACE|pygame.DOUBLEBUF|pygame.RESIZABLE)           
-         
+         self._screen = pygame.display.set_mode((self._infoObject.current_w >> 1, self._infoObject.current_h >> 1),pygame.HWSURFACE|pygame.DOUBLEBUF|pygame.RESIZABLE)                  
          #사용자가 close 버튼을 누르지 않는다면
          self._done = False
          
