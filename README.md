@@ -26,7 +26,8 @@
 <img src="/image/빙고판.PNG" width="50%" height="50%"><img src="/image/게임.PNG" width="50%" height="50%">  
   
 3. 정답맞추기에 성공하면 정답화면으로 넘어간다.
-4. 빙고판에 동그라미가 표시되고 같은 방식으로 다른 게임들을 진행해 빙고판을 완성한다.  
+4. 빙고판에 동그라미가 표시되고 같은 방식으로 다른 게임들을 진행해 빙고판을 완성한다.
+5. 정답을 맞추지 못하면 오답화면에 나오고 빙고판에 변화가 없다. 
 
 <img src="/image/정답.PNG" width="50%" height="50%"><img src="/image/빙고판3.png" width="50%" height="50%">
 ### 3.2 Motion in Game
