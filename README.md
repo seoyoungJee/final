@@ -72,3 +72,9 @@ Ex) 손, 팔꿈치, 무릎, 머리 등
 
   6. 실행된 Kinect for Window에 위와 같이 체크가 되어 있어야 합니다. (USB Controller의 느낌표가 표시되어 있지만 사용하는데 문제는 없습니다.)
   7. 설치가 완료되었습니다.
+
+## 6. Code
+### Main code
+
+### Detailed code
+[Detailed](https://github.com/Jedidiah97/123/blob/main/README.md) 
