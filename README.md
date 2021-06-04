@@ -44,6 +44,7 @@ Ex) 손, 팔꿈치, 무릎, 머리 등
 
 설치 과정 
 [Microsoft Download Center](https://www.microsoft.com/ko-kr/download/)에서 설치 파일 [Kinect for Windows SDK v2](https://developer.microsoft.com/ko-kr/windows/kinect/)을 다운 받는다. 
+
 <img src="/image/download(1).png" width="50%" height="50%">
 
 최신버전 사용을 추천합니다.
@@ -66,10 +67,8 @@ Ex) 손, 팔꿈치, 무릎, 머리 등
 
   4. 설치가 완료되면 Kinect 센서가 전원 허브에 연결되어 있고 전원 허브가 콘센트에 연결되어 있는지 확인합니다. 전원 허브의 USB 케이블을 PC의 USB 3.0 포트에 연결합니다. 드라이버 설치가 자동으로 시작됩니다.
   5. 드라이버 설치 후 장치 관리자를 실행하여 확인할 수 있으며 장치 목록에 "KinectSensor Device"가 존재합니다.
-
-<img src="/image/download(4).jpeg" width="50%" height="50%"><img src="/image/download(5).jpeg" width="50%" height="50%">
-
-<img src="/image/download(6).jpeg" width="50%" height="50%">
+  
+<img src="/image/download(5).jpeg" width="50%" height="50%"><img src="/image/download(6).jpeg" width="50%" height="50%">
 
   6. 실행된 Kinect for Window에 위와 같이 체크가 되어 있어야 합니다. (USB Controller의 느낌표가 표시되어 있지만 사용하는데 문제는 없습니다.)
   7. 설치가 완료되었습니다.
