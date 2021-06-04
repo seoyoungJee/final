@@ -33,4 +33,6 @@
 Kinect V2 카메라를 통해 사람 몸의 Joint를 인식한다.  
 게임별로 사용되는 Joint가 각각 다른데 미리 설정한 Joint가 정해진 위치에 닿으면 정답 유무를 인식하는 알고리즘을 적용한다.
 이를 통해 여러 정답 선택지들을 마우스가 아닌 Body Joints를 사용해 정답을 선택한다.
-Ex) 손, 머리, 발, 무릎 등
+Ex) 손, 팔꿈치, 무릎, 머리 등  
+
+<img src="/image/손.PNG" width="50%" height="50%"><img src="/image/팔꿈치.PNG" width="50%" height="50%">
