@@ -161,7 +161,7 @@ C:\Users\name\Downloads> pip install pygame-2.0.0-cp35-cp35m-win_amd64.whl
          self.fill = fill        
 ```
 
-화면에 사용자의 몸이 보이도록 하고, 사용자의 관절을 인식하는 원리 [🔝](#bingo-game-for-etiquette)
+사용자의 몸이 화면에 보이도록 하고, 사용자의 관절을 인식하는 원리 [🔝](#bingo-game-for-etiquette)
 ```Python
      #사용자의 몸이 화면에 보이도록 하고, 게임 작동 원리를 담고 있는 매서드
      def draw_body_bone(self, joints, jointPoints, color, joint0, joint1, boardN):
@@ -207,8 +207,9 @@ C:\Users\name\Downloads> pip install pygame-2.0.0-cp35-cp35m-win_amd64.whl
                         flag = 0
 ```
 
-메인 빙고 화면 설정 및 화면 전환 [🔝](#bingo-game-for-etiquette)
+빙고 판이 있는 메인 화면 설정 및 화면 변환 [🔝](#bingo-game-for-etiquette)
 ```Python
+#이 게임이 작동되도록 하는 함수 
 def w_game():
     pygame.font.init()
     game = PyKinectCollect("Bingo Game for Etiquette")
@@ -250,6 +251,6 @@ def w_game():
 ```
 
 ### 6.2 Detailed code
-[Source Code](https://github.com/seoyoungJee/final/blob/main/download/source%20code.md) 
+[Detailed](https://github.com/seoyoungJee/final/blob/main/download/source%20code.md) 
 
  [🔝](#bingo-game-for-etiquette)
