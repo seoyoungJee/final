@@ -6,7 +6,7 @@
 2. [Background & Objective](#2background--objective-----top)
 3. [Main Function](#3main-function-----top)
 4. [Demonstration Video](#4demonstration-video-----top)
-5. [Step by Step Instruction](#5step-by-step-instruction-top)https://github.com/seoyoungJee/final/blob/main/README.md#5step-by-step-instruction-top
+5. [Step by Step Instruction](#5step-by-step-instruction-top)
 6. [Code](#6code-----top)
 
 ## 1.Introduction     [top](#members)
