@@ -80,7 +80,7 @@ https://user-images.githubusercontent.com/55008881/120818246-632ebc80-c58d-11eb-
 
 ### 5.2 Python Installation
 
-   1. 사이트에서 [이썬](https://www.python.org/downloads/)설치 파일을 다운 받습니다. 
+   1. 사이트에서 [Python](https://www.python.org/downloads/) 설치 파일을 다운 받습니다. 
 
 <img src="/image/hrImg1.png" width="50%" height="50%">
 
