@@ -250,6 +250,6 @@ def w_game():
 ```
 
 ### 6.2 Detailed code
-[Whole Code](https://github.com/seoyoungJee/final/blob/main/download/source%20code.md) 
+[Source Code](https://github.com/seoyoungJee/final/blob/main/download/source%20code.md) 
 
  [🔝](#bingo-game-for-etiquette)
