@@ -9,11 +9,11 @@
 5. [Step by Step Instruction](#5step-by-step-instruction-)
 6. [Code](#6code-)
 
-## 1.Introduction [🔝](#bingo-game-for-etiquette)
+## 1.Introduction [🔝](#bingo-game-for-etiquette-kinectpython)
 해당 프로젝트는 **모션인식을 이용한 어린이 언어습관 교정 게임**이다. 어린이가 존댓말, 감사표현 등 상황에 맞는 언어 습관을 구사할 수 있도록 모션 인식 기술을 이용해 게임으로 재미있게 공부할 수 있도록 돕는다. 빙고게임이라는 게임 포맷을 사용함으로써 어린이가 빙고판을 채워나가는 성취감을 주어 학습효과를 더욱 향상시키고자 한다.   
 
 
-## 2.Background & Objective [🔝](#bingo-game-for-etiquette)
+## 2.Background & Objective [🔝](#bingo-game-for-etiquette-kinectpython)
 
 ### 2.1 Target User 
 > 6-7세의 어린이를 대상으로 설정했다. 초등학교 입학 전 필요한 올바른 언어에 대한 학습을 할 수 있는 프로그램이므로 미취학 아동 중 글을 읽을 수 있는 나이인 6-7세의 어린이로 설정했다. 
@@ -24,7 +24,7 @@
 >Kinect V2와 pygame을 이용한 모션인식 게임을 통해 어린이가 직접 몸을 움직이면서 다양한 상황에 해당하는 올바른 언어예절을 학습을 할 수 있는 빙고게임을 개발한다.
 
 
-## 3.Main Function [🔝](#bingo-game-for-etiquette)
+## 3.Main Function [🔝](#bingo-game-for-etiquette-kinectpython)
 ### 3.1 Bingo Game
 1. 3x3 빙고판을 채우는 것이 과제다. 각각의 빙고 칸마다 각기 다른 스토리로 언어예절 게임이 존재한다.
 2. User가 선택한 칸에 해당하는 게임의 문제를 읽고 지시사항대로 모션을 취한다.  
@@ -44,13 +44,13 @@ Ex) 손, 팔꿈치, 무릎, 머리 등
 
 <img src="/image/손.PNG" width="50%" height="50%"><img src="/image/무릎.PNG" width="50%" height="50%">
 
-## 4.Demonstration Video [🔝](#bingo-game-for-etiquette)
+## 4.Demonstration Video [🔝](#bingo-game-for-etiquette-kinectpython)
 
 https://user-images.githubusercontent.com/55008881/120818246-632ebc80-c58d-11eb-95ae-9e0707814542.mp4
 
 
 
-## 5.Step by Step Instruction [🔝](#bingo-game-for-etiquette)
+## 5.Step by Step Instruction [🔝](#bingo-game-for-etiquette-kinectpython)
 ### 5.1 Kinect for Windows SDK v2 Installation
 
 [Microsoft Download Center](https://www.microsoft.com/ko-kr/download/)에서 설치 파일 [Kinect for Windows SDK v2](https://developer.microsoft.com/ko-kr/windows/kinect/)을 다운 받는다. 
@@ -130,7 +130,7 @@ C:\Users\name\> cd Downloads
 C:\Users\name\Downloads> pip install pygame-2.0.0-cp35-cp35m-win_amd64.whl
 ```
 
-## 6.Code [🔝](#bingo-game-for-etiquette)
+## 6.Code [🔝](#bingo-game-for-etiquette-kinectpython)
 ### 6.1 Main code
 
 게임 화면과 필수 요소 설정
@@ -161,7 +161,7 @@ C:\Users\name\Downloads> pip install pygame-2.0.0-cp35-cp35m-win_amd64.whl
          self.fill = fill        
 ```
 
-사용자의 몸이 화면에 보이도록 하고, 사용자의 관절을 인식하는 원리 [🔝](#bingo-game-for-etiquette)
+사용자의 몸이 화면에 보이도록 하고, 사용자의 관절을 인식하는 원리 [🔝](#bingo-game-for-etiquette-kinectpython)
 ```Python
      #사용자의 몸이 화면에 보이도록 하고, 게임 작동 원리를 담고 있는 매서드
      def draw_body_bone(self, joints, jointPoints, color, joint0, joint1, boardN):
@@ -207,7 +207,7 @@ C:\Users\name\Downloads> pip install pygame-2.0.0-cp35-cp35m-win_amd64.whl
                         flag = 0
 ```
 
-빙고 판이 있는 메인 화면 설정 및 화면 전환 [🔝](#bingo-game-for-etiquette)
+메인 빙고 화면 설정 및 화면 전환 [🔝](#bingo-game-for-etiquette-kinectpython)
 ```Python
 #이 게임이 작동되도록 하는 함수 
 def w_game():
@@ -253,4 +253,4 @@ def w_game():
 ### 6.2 Detailed code
 [Game Source Code](https://github.com/seoyoungJee/final/blob/main/download/source%20code.md) 
 
- [🔝](#bingo-game-for-etiquette)
+ [🔝](#bingo-game-for-etiquette-kinectpython)
