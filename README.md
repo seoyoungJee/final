@@ -3,7 +3,7 @@
 강하영, 강진, 김해린, 지서영, 유수정
 
 1. [Introduction](#1introduction)
-2. [Background & Objective](#2background-&-objective)
+2. [Background & Objective](#2background--objective)
 3. [Main Function](#3main-function)
 4. [Demonstration Video](#4demonstration-video)
 5. [Step by Step Instruction](#5step-by-step-instruction)
