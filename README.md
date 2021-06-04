@@ -1,4 +1,4 @@
-# Bingo Game for Etiquette
+# Bingo Game for Etiquette (Kinect&Pygame)
 ### Manners Maketh Man members    
 강하영, 강진, 김해린, 지서영, 유수정
 
