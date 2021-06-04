@@ -133,7 +133,7 @@ C:\Users\name\Downloads> pip install pygame-2.0.0-cp35-cp35m-win_amd64.whl
 ## 6.Code [🔝](#bingo-game-for-etiquette)
 ### 6.1 Main code
 
-게임 인식 화면 및 필수 설정
+게임 화면 및 필수 요소 설정
 ```Python
  class PyKinectCollect(object):
      def __init__(self, title, width = 1400, height=800, fill=YELLOW):
