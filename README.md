@@ -80,7 +80,7 @@ https://user-images.githubusercontent.com/55008881/120818246-632ebc80-c58d-11eb-
 
 ### 5.2 Python Installation
 
-   1. 사이트에서 파이썬 설치 파일을 다운 받습니다. (https://www.python.org/downloads/)
+   1. 사이트에서 [이썬](https://www.python.org/downloads/)설치 파일을 다운 받습니다. 
 
 <img src="/image/hrImg1.png" width="50%" height="50%">
 
@@ -96,12 +96,33 @@ https://user-images.githubusercontent.com/55008881/120818246-632ebc80-c58d-11eb-
 
 ### 5.3 Pykinect2 package Installation    
 
-   - 터미널 또는 CMD창에서 아래의 명령어를 통해 패키지를 설치합니다.
+터미널 또는 CMD창에서 아래의 명령어를 통해 패키지를 설치합니다.
    ```
    pip install pykinect2
    ```
 
-
+### 5.4 NumPy package Installation (1,2번중 선택)
+   1. Anaconda 32-bit 버전에 NumPy가 포함되어 있기 때문에 [Anaconda](https://www.anaconda.com/products/individual)다운 받으면 됩니다. 
+   2. 터미널 또는 CMD창에서 아래의 명령어를 통해 패키지를 설치합니다.
+   
+   ```
+    pip install numpy
+   ```
+    
+### 5.5 comtypes package Installation
+터미널 또는 CMD창에서 아래의 명령어를 통해 패키지를 설치합니다.
+```
+pip install comtypes
+```
+    
+### 5.6 pygame package Installation
+1. Python 버전과 같은 [pygame 2.0](https://github.com/pygame/pygame/releases/tag/2.0.0) 파일을 다운 받습니다. (예 python35 / pygame-2.0.0-cp35-cp35m-win_amd64.whl) 
+2. 터미널 또는 CMD창에서 아래의 명령어를 통해 패키지를 설치합니다.
+    
+```
+C:\Users\name\> cd Downloads
+C:\Users\name\Downloads> pip install pygame-2.0.0-cp35-cp35m-win_amd64.whl
+```
 
 ## 6. Code
 ### 6.1 Main code
