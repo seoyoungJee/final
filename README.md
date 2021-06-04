@@ -74,7 +74,122 @@ Ex) 손, 팔꿈치, 무릎, 머리 등
   7. 설치가 완료되었습니다.
 
 ## 6. Code
-### Main code
+### 6.1 Main code
+```Python
+#언어는 파이썬
+import pygame
+from pykinect2 import PyKinectV2
+from pykinect2.PyKinectV2 import *
+from pykinect2 import PyKinectRuntime
+import time
 
-### Detailed code
+import ctypes
+import _ctypes
+import pygame
+import sys
+
+import random
+import math
+import datetime
+
+#이 게임에서 없어서는 안 될 클래스
+ class PyKinectCollect(object):
+     def __init__(self, title, width = 1400, height=800, fill=YELLOW):
+         self._clock = pygame.time.Clock()
+
+         #스크린의 사이즈 설정; 가로, 세로
+         self._infoObject = pygame.display.Info()
+         self._screen = pygame.display.set_mode((self._infoObject.current_w >> 1, self._infoObject.current_h >> 1), 
+                                               pygame.HWSURFACE|pygame.DOUBLEBUF|pygame.RESIZABLE)                                          
+         #사용자가 close 버튼을 누르지 않는다면
+         self._done = False
+
+         #Kinect runtime object 
+         self._kinect = PyKinectRuntime.PyKinectRuntime(PyKinectV2.FrameSourceTypes_Color | PyKinectV2.FrameSourceTypes_Body)
+
+         #Kinect color frames, 32비트 색깔, 가로, 그리고 세로를 담을 공간(surface)
+         self._frame_surface = pygame.Surface((self._kinect.color_frame_desc.Width, self._kinect.color_frame_desc.Height), 0, 32)
+
+         #골격 정보를 담는 공간 
+         self._bodies = None
+
+         self.current = False
+         self.title = title
+         self.width = width
+         self.height = height
+         self.fill = fill        
+
+#사용자의 몸이 화면에 보이도록 하고, 게임 작동 원리를 담고 있는 매서드  
+     def draw_body_bone(self, joints, jointPoints, color, joint0, joint1, boardN):
+         joint0State = joints[joint0].TrackingState;
+         joint1State = joints[joint1].TrackingState;
+
+         #사용자의 관절이 부분적으로 인식될 때 
+         if (joint0State == PyKinectV2.TrackingState_NotTracked) or (joint1State == PyKinectV2.TrackingState_NotTracked):
+             return
+
+         #사용자의 관절이 전혀 인식되지 않을 때 
+         if (joint0State == PyKinectV2.TrackingState_Inferred) and (joint1State == PyKinectV2.TrackingState_Inferred):
+             return
+
+         start = (0, 0)
+         end = (0, 0)
+         global starttime
+         global flag
+         
+         #사용자의 머리를 인식하는 경우
+         if (boardN == 1):
+            
+            #사용자의 머리 인식을 위해 x, y 좌표 정의 
+            JointX = jointPoints[PyKinectV2.JointType_Head].x
+            JointY = jointPoints[PyKinectV2.JointType_Head].y
+            
+            #사용자의 머리가 주어진 범위 안에 있을 때 
+            if (1400 <= JointX) and (1000 >= JointY):
+                
+                #처음 
+                if (starttime == 0):
+                    timestamp = datetime.datetime.now().timestamp()
+                    fts = timestamp
+                    starttime = fts
+                    print('time start!!!!!!!!!!!!!!!!!!!!!!!!!')
+                    pygame.display.update()
+                    print (starttime)
+                else:
+                    timestamp = datetime.datetime.now().timestamp()
+                    fts2 = timestamp
+                    print('right', fts2)
+                    if (starttime+2 < fts2):
+                        print('touch1')
+                        flag = 0
+
+#이 게임이 작동되도록 하는 함수 
+def w_game():
+    pygame.font.init()
+
+    game = PyKinectCollect("Bingo Game for Etiquette")
+    b_screen = Screen("Bingo_Screen")
+    win = b_screen.makeCurrent()
+    done = False
+    
+    #3x3 빙고 표에서의 좌표(행과 열)에 따라 page에 숫자를 부여했다 
+    #b_1(행: 1, 열: 1)
+        if b_screen.checkUpdate():
+            screen2button = bingo_1.focusCheck(mouse_pos, mouse_click)
+            bingo_1.showButton(b_screen.returnTitle(),buttonlist[0])
+            if screen2button:
+                win = game.makeCurrent()
+                g_screen=game.playGame(1)
+                b_screen.endCurrent()
+                
+    #b_2(행: 1, 열: 2)  
+        if b_screen.checkUpdate():
+            screen2button = bingo_2.focusCheck(mouse_pos, mouse_click)
+            bingo_2.showButton(b_screen.returnTitle(),buttonlist[1])
+            if screen2button:
+                win = game.makeCurrent()
+                g_screen=game.playGame(2)
+                b_screen.endCurrent()
+                
+### 6.2 Detailed code
 [Detailed](https://github.com/Jedidiah97/123/blob/main/README.md) 
