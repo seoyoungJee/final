@@ -2,7 +2,7 @@
 ### Members    
 강하영, 강진, 김해린, 지서영, 유수정
 
-1. [Introduction](#1introduction-----) https://github.com/seoyoungJee/final/blob/main/README.md#1introduction-----
+1. [Introduction](#1introduction-----) 
 2. [Background & Objective](#2background--objective-----)
 3. [Main Function](#3main-function-----)
 4. [Demonstration Video](#4demonstration-video-----)
@@ -15,12 +15,12 @@
 
 ## 2.Background & Objective     [🔝](#members)
 
-### 2.1 Target User
+### 2.1 Target User [🔝](#members)
 > 6-7세의 어린이를 대상으로 함. 초등학교 입학 전 필요한 올바른 언어에 대한 학습을 할 수 있는 프로그램이므로 미취학 아동 중 글을 읽을 수 있는 나이인 6-7세의 어린이로 설정했다. 
 
-### 2.2 Their Problems
+### 2.2 Their Problems [🔝](#members)
 >바른 언어습관 형성을 위해서는 공동체 속에서 학습하는 것이 필요하다. 과거에는 대가족을 형성해 많은 가족 구성원이 함께함으로써 예절을 배울 기회가 많았다면 현재는 점점 핵가족화 되어가 예절교육에 소홀해지는 경향이 있고, 더욱이 현재 Covid-19와 같은 펜데믹상황이 발생하여 사회적 거리두기로 인해 공동체를 이루는 것이 어려워졌다. 따라서 어린이들이 다양한 상황에 따른 바른 언어 습관을 형성할 수 있도록 돕는 새로운 방법을 고안했다.
-### 2.3  Project Goal
+### 2.3  Project Goal [🔝](#members)
 >Kinect V2와 pygame을 이용한 모션인식 게임을 통해 어린이가 직접 몸을 움직이면서 다양한 상황에 해당하는 올바른 언어예절을 학습을 할 수 있는 빙고게임을 개발한다.
 
 
@@ -36,7 +36,7 @@
 5. 정답을 맞추지 못하면 오답화면에 나오고 빙고판에 변화가 없다. 
 
 <img src="/image/정답.PNG" width="50%" height="50%"><img src="/image/빙고판3.png" width="50%" height="50%">
-### 3.2 Motion in Game
+### 3.2 Motion in Game [🔝](#members)
 1. Kinect V2 카메라를 통해 사람 몸의 Joint를 인식한다.  
 2. 게임별로 사용되는 Joint가 각각 다른데 미리 설정한 Joint가 정해진 위치에 닿으면 정답 유무를 인식하는 알고리즘을 적용한다.
 3. 이를 통해 여러 정답 선택지들을 마우스가 아닌 Body Joints를 사용해 정답을 선택한다.  
@@ -51,7 +51,7 @@ https://user-images.githubusercontent.com/55008881/120818246-632ebc80-c58d-11eb-
 
 
 ## 5.Step by Step Instruction [🔝](#members)
-### 5.1 Kinect for Windows SDK v2 Installation
+### 5.1 Kinect for Windows SDK v2 Installation [🔝](#members)
 
 [Microsoft Download Center](https://www.microsoft.com/ko-kr/download/)에서 설치 파일 [Kinect for Windows SDK v2](https://developer.microsoft.com/ko-kr/windows/kinect/)을 다운 받는다. 
 
@@ -84,7 +84,7 @@ https://user-images.githubusercontent.com/55008881/120818246-632ebc80-c58d-11eb-
   7. 설치가 완료되었습니다.
 
 
-### 5.2 Python Installation
+### 5.2 Python Installation [🔝](#members)
 
    1. 사이트에서 [Python](https://www.python.org/downloads/) 설치 파일을 다운 받습니다. 
 
@@ -100,14 +100,14 @@ https://user-images.githubusercontent.com/55008881/120818246-632ebc80-c58d-11eb-
    ```
 
 
-### 5.3 Pykinect2 package Installation    
+### 5.3 Pykinect2 package Installation  [🔝](#members)   
 
 터미널 또는 CMD창에서 아래의 명령어를 통해 패키지를 설치합니다.
    ```
    pip install pykinect2
    ```
 
-### 5.4 NumPy package Installation (1,2번중 선택)
+### 5.4 NumPy package Installation (1,2번중 선택) [🔝](#members)
    1. Anaconda 32-bit 버전에 NumPy가 포함되어 있기 때문에 [Anaconda](https://www.anaconda.com/products/individual)다운 받으면 됩니다. 
    2. 터미널 또는 CMD창에서 아래의 명령어를 통해 패키지를 설치합니다.
    
@@ -115,13 +115,13 @@ https://user-images.githubusercontent.com/55008881/120818246-632ebc80-c58d-11eb-
     pip install numpy
    ```
     
-### 5.5 comtypes package Installation
+### 5.5 comtypes package Installation [🔝](#members)
 터미널 또는 CMD창에서 아래의 명령어를 통해 패키지를 설치합니다.
 ```
 pip install comtypes
 ```
     
-### 5.6 pygame package Installation
+### 5.6 pygame package Installation [🔝](#members)
 1. Python 버전과 같은 [pygame 2.0](https://github.com/pygame/pygame/releases/tag/2.0.0) 파일을 다운 받습니다. (예 python35 / pygame-2.0.0-cp35-cp35m-win_amd64.whl) 
 2. 터미널 또는 CMD창에서 아래의 명령어를 통해 패키지를 설치합니다.
     
@@ -160,7 +160,7 @@ C:\Users\name\Downloads> pip install pygame-2.0.0-cp35-cp35m-win_amd64.whl
          self.fill = fill        
 ```
 
-사용자의 몸이 화면에 보이도록 하고, 사용자 관 인식 작동 원리  
+사용자의 몸이 화면에 보이도록 하고, 사용자 관 인식 작동 원리   [🔝](#members)
 ```Python
      def draw_body_bone(self, joints, jointPoints, color, joint0, joint1, boardN):
          joint0State = joints[joint0].TrackingState;
@@ -205,7 +205,7 @@ C:\Users\name\Downloads> pip install pygame-2.0.0-cp35-cp35m-win_amd64.whl
                         flag = 0
 ```
 
-메인 빙고 화면 설정 및 화면 변환
+메인 빙고 화면 설정 및 화면 변환 [🔝](#members)
 ```Python
 def w_game():
     pygame.font.init()
